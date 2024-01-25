@@ -18,23 +18,23 @@ const Table = () => {
   }, []);
 
   return (
-    <div className="overflow-x-auto">
-      <table className="min-w-full border-gray-300 w-full rounded-lg shadow-2xl">
+    <div className="rounded-xl overflow-hidden ">
+      <table className="min-w-full border-gray-300 w-full rounded-xl shadow-2xl">
         <thead>
           <tr className="bg-gray-200">
-            <th className="border p-4 bg-white">Id</th>
-            <th className="border p-4 bg-white">Name</th>
-            <th className="border p-4 bg-white">Quantity</th>
-            <th className="border p-4 bg-white">Price</th>
+            <th className="border p-3 bg-white">Id</th>
+            <th className="border p-3 bg-white">Name</th>
+            <th className="border p-3 bg-white">Quantity</th>
+            <th className="border p-3 bg-white">Price</th>
           </tr>
         </thead>
         <tbody>
           {tableData.map((item, index) => (
             <tr key={item.id} className={index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}>
-              <td className="border p-4">{item.id}</td>
-              <td className="border p-4">{item.name}</td>
-              <td className="border p-4">{item.quantity}</td>
-              <td className="border p-4">{item.price}</td>
+              <td className="border p-3">{item.id}</td>
+              <td className="border p-3">{item.name}</td>
+              <td className="border p-3">{item.quantity}</td>
+              <td className="border p-3">{item.price}</td>
             </tr>
           ))}
         </tbody>
