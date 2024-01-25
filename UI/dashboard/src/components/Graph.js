@@ -8,6 +8,7 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
+  ResponsiveContainer,
 } from "recharts";
 
 const Graph = () => {
@@ -29,21 +30,23 @@ const Graph = () => {
   }, []);
 
   return (
-    <div className="bg-white p-4 rounded-lg flex items-center justify-center mt-5 shadow-2xl">
-      <LineChart width={500} height={300} data={graphData}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="x" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Line
-          type="monotone"
-          dataKey="y"
-          stroke={"#9ecde7"}
-          strokeWidth={3}
-          dot={{ fill: "#9ecde7" }}
-        />
-      </LineChart>
+    <div className="bg-white lg:w-[45%] p-4 rounded-lg  flex items-center justify-center mt-5 shadow-2xl">
+      <ResponsiveContainer width="100%" height={350}>
+        <LineChart data={graphData}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="x" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Line
+            type="monotone"
+            dataKey="y"
+            stroke={"#9ecde7"}
+            strokeWidth={3}
+            dot={{ fill: "#9ecde7" }}
+          />
+        </LineChart>
+      </ResponsiveContainer>
     </div>
   );
 };

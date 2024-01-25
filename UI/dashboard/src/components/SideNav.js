@@ -13,7 +13,7 @@ const SideNav = () => {
     setSelected(option);
   };
   return (
-    <div className="h-screen w-[20%]  bg-[#1f2538] fixed">
+    <div className="h-screen w-[20%]  bg-[#1f2538] fixed hidden sm:block">
       <div className="w-full h-full md:pt-8 g-red-600 flex flex-col  justify-between">
         {/* for logos */}
         <div className="w-full g-yellow-300 items-center flex justify-center flex-col ">
