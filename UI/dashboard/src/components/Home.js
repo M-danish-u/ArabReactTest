@@ -31,7 +31,7 @@ const Home = () => {
     <div className=" w-[screen] g-red-500 flex flex-row  fsm:lex-row">
       
       <SideNav />
-      <div className="h-full w-[100%] sm:w-[80%] relative bg-[#e8eeff] p-2 md:py-6 md:px-10 lg:px-14 sm:ml-[20%] ">
+      <div className="h-full lg:h-[screen] w-[100%] sm:w-[80%] relative bg-[#e8eeff] p-2 md:py-6 md:px-10 lg:px-14 sm:ml-[20%] ">
         <div className="bg-[#1f2538] sm:bg-transparent rounded-md p-2  flex flex-row items-center justify-between">
           <p className="md:text-lg hidden sm:block">Good Morning ! 🌞 </p>
           

@@ -25,7 +25,7 @@ const SideNav = () => {
         {/* for side menu */}
         <div className="w-full  md:pt-8 g-red-600 flex flex-col mt-[-100px] md:mt-0 py-2 lg:items-end gap-8 px-2 md:px-0 ">
           <div
-            className={`flex flex-row md:gap-3 lg:w-[70%] justify-center md:justify-start items-center  md:pl-6 lg:pl-8  py-3  rounded-md md:rounded-none md:rounded-l-lg ${
+            className={`flex flex-row md:gap-3 lg:w-[70%] justify-center md:justify-start items-center  md:pl-6 lg:pl-8  py-3 cursor-pointer  rounded-md md:rounded-none md:rounded-l-lg ${
               selected === "Dashboard" ? "bg-white" : "bg-[#171f2f] text-white"
             }`}
             onClick={() => handleSelected("Dashboard")}
@@ -34,7 +34,7 @@ const SideNav = () => {
             <p className="hidden md:block">Dashboard</p>
           </div>
           <div
-            className={`flex flex-row md:gap-3 lg:w-[70%] justify-center md:justify-start items-center  md:pl-6 lg:pl-8 py-3 rounded-md md:rounded-none md:rounded-l-lg ${
+            className={`flex flex-row md:gap-3 lg:w-[70%] justify-center md:justify-start items-center cursor-pointer  md:pl-6 lg:pl-8 py-3 rounded-md md:rounded-none md:rounded-l-lg ${
               selected === "Support" ? "bg-white" : "bg-[#171f2f] text-white"
             }`}
             onClick={() => handleSelected("Support")}
@@ -43,7 +43,7 @@ const SideNav = () => {
             <p className="hidden md:block">Support</p>
           </div>
           <div
-            className={`flex flex-row md:gap-3 lg:w-[70%] justify-center md:justify-start items-center  md:pl-6 lg:pl-8  py-3 md:rounded-none rounded-md md:rounded-l-lg ${
+            className={`flex flex-row md:gap-3 lg:w-[70%] justify-center md:justify-start items-center  cursor-pointer md:pl-6 lg:pl-8  py-3 md:rounded-none rounded-md md:rounded-l-lg ${
               selected ==="Puzzle" ? "bg-white" : "bg-[#171f2f] text-white"
             }`}
             onClick={() => handleSelected("Puzzle")}
@@ -52,7 +52,7 @@ const SideNav = () => {
             <p className="hidden md:block">Puzzle</p>
           </div>
           <div
-            className={`flex flex-row md:gap-3 lg:w-[70%] justify-center md:justify-start items-center  md:pl-6 lg:pl-8  py-3 rounded-md md:rounded-none md:rounded-l-lg ${
+            className={`flex flex-row md:gap-3 lg:w-[70%] justify-center md:justify-start items-center cursor-pointer  md:pl-6 lg:pl-8  py-3 rounded-md md:rounded-none md:rounded-l-lg ${
               selected === "Help" ? "bg-white" : "bg-[#171f2f] text-white"
             }`}
             onClick={() => handleSelected("Help")}
@@ -62,7 +62,7 @@ const SideNav = () => {
           </div>
         </div>
         {/* for log out */}
-        <div className="w-full py-4 bg-white flex flex-row gap-3 items-center justify-center">
+        <div className="w-full py-4 cursor-pointer bg-white flex flex-row gap-3 items-center justify-center">
           <p className="hidden md:block">Logout</p>
           <img src={logout} className="size-fit  " alt=""/>
         </div>

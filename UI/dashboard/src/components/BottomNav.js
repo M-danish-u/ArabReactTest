@@ -13,11 +13,11 @@ import logout from "../Assets/Shutdown.png";
 
    return (
      <div className='w-full h-20 bg-[#1f2538] items-center justify-between px-3 rounded- fixed bottom-0 left-0 right-0 sm:hidden  flex z-50 '>
-        <img src={menu} alt="" className={`size-fit p-2 rounded  ${selected==="Dashboard"?'bg-white':'bg-[#171f2f]'}`}onClick={() => handleSelected("Dashboard")}/>
-        <img src={puzzle} alt="" className={`size-fit p-2 rounded ${selected==="Puzzle"?'bg-white':'bg-[#171f2f]'}`}onClick={() => handleSelected("Puzzle")}/>
-        <img src={support} alt="" className={`size-fit p-2 rounded ${selected==="Support"?'bg-white':'bg-[#171f2f]'}`}onClick={() => handleSelected("Support")}/>
-        <img src={help} alt="" className={`size-fit p-2 rounded ${selected==="Help"?'bg-white':'bg-[#171f2f]'}`}onClick={() => handleSelected("Help")}/>
-        <img src={logout} alt="" className='size-fit p-4 rounded bg-[#171f2f]'/>
+        <img src={menu} alt="" className={`size-fit cursor-pointer p-2 rounded  ${selected==="Dashboard"?'bg-white':'bg-[#171f2f]'}`}onClick={() => handleSelected("Dashboard")}/>
+        <img src={puzzle} alt="" className={`size-fit cursor-pointer p-2 rounded ${selected==="Puzzle"?'bg-white':'bg-[#171f2f]'}`}onClick={() => handleSelected("Puzzle")}/>
+        <img src={support} alt="" className={`size-fit cursor-pointer p-2 rounded ${selected==="Support"?'bg-white':'bg-[#171f2f]'}`}onClick={() => handleSelected("Support")}/>
+        <img src={help} alt="" className={`size-fit cursor-pointer p-2 rounded ${selected==="Help"?'bg-white':'bg-[#171f2f]'}`}onClick={() => handleSelected("Help")}/>
+        <img src={logout} alt="" className='size-fit cursor-pointer p-4 rounded bg-[#171f2f]'/>
      </div>
    )
  }
