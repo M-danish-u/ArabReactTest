@@ -51,7 +51,7 @@ const Home = () => {
           </div>
         </div>
         {/* Graph and piechart container */}
-        <div className="flex flex-col lg:flex-row   md:mt-10 b-slate-500 justify-between">
+        <div className="flex flex-col lg:flex-row   md:mt-5 b-slate-500 justify-between">
           <Graph />
           <PieCharts />
         </div>
